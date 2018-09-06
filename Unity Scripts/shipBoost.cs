@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class boost : MonoBehaviour {
+public class shipBoost : MonoBehaviour {
 
 	Rigidbody2D rb;
 	public GameObject flames;
@@ -23,7 +23,6 @@ public class boost : MonoBehaviour {
 		flames.SetActive(false);
 	}
 	
-	// Update is called once per frame
 	void Update () {
 			where = Vector3.zero;
 		if (Input.GetKey(keys[0])){
