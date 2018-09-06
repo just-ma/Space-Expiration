@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class destroy : MonoBehaviour {
+public class destroyOnTouch : MonoBehaviour {
 
 	private GameObject ship;
 	private Vector3 offset;
@@ -14,8 +14,6 @@ public class destroy : MonoBehaviour {
 	void Update(){
 		if (ship == null)
 			ship = GameObject.FindWithTag("Ship");
-		Debug.Log (ship);
-		Debug.Log (ship.transform.position);
 		transform.position = ship.transform.position + offset;
 	}
 
