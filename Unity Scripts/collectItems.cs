@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class collect : MonoBehaviour {
+public class collectItems : MonoBehaviour {
 
 	public string tag;
 	public GameObject[] dots;
