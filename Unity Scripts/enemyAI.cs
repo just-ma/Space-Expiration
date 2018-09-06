@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class enemy : MonoBehaviour {
+public class enemyAI : MonoBehaviour {
 
 	public GameObject unluckyShip;
 	float minDist = 10f;
