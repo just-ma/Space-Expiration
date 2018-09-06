@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ouch : MonoBehaviour {
+public class shipAttacked : MonoBehaviour {
 
 	Rigidbody2D rb;
 	SpriteRenderer sr;
@@ -22,7 +22,7 @@ public class ouch : MonoBehaviour {
 			count++;
 			if (count == 4) {
 				manager.dead = true;
-				//Destroy (gameObject);
+				Destroy (gameObject);
 			}
 			rb.AddForce ((collision.transform.position - transform.position) * power * 10);
 			rb.AddTorque (power);
